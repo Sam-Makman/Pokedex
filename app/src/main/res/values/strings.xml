@@ -2,4 +2,17 @@
     <string name="app_name">Pokedex</string>
     <string name="pokemon_weight">Wt: %s</string>
     <string name="pokemon_height">Ht: %s</string>
+    <string name="pokemon_hp">HP: %s</string>
+    <string name="pokemon_exp">Exp: %s</string>
+    <string name="pokemon_attack">Attack: %s</string>
+    <string name="pokemon_defense">Defense: %s</string>
+    <string name="pokemon_speed">Speed: %s</string>
+    <string name="pokemon_specattack">Special Attack: %s</string>
+    <string name="pokemon_special_defense">Special Defence: %s</string>
+    <string name="pokemon_image">Pokemon Image</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="transition_name_image">transition:Image</string>
+    <string name="transition_name_id">Transition:Id</string>
+    <string name="transition_name_weight">Transition:Weight</string>
+    <string name="transition_name_height">Transition:Height</string>
 </resources>

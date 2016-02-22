@@ -12,7 +12,8 @@ public class Pokemon implements Serializable {
 
     private String mName, mId, mSpeciesId, mHeight, mWeight;
 
-    private String BaseExp, mHp, mSpeed, mSpecDef, mSpecAtk, mDefence, mAttack;
+    private String mBaseExp, mHp, mSpeed, mSpecDef, mSpecAtk, mDefence, mAttack;
+    private boolean mUpadated;
 
 
     public Pokemon(String csvStr) {
@@ -23,6 +24,7 @@ public class Pokemon implements Serializable {
         mSpeciesId = split[2];
         mHeight = split[3];
         mWeight = split[4];
+        mUpadated = false;
     }
 
     public String getImageUrl(){
@@ -53,11 +55,11 @@ public class Pokemon implements Serializable {
     }
 
     public String getBaseExp() {
-        return BaseExp;
+        return mBaseExp;
     }
 
     public void setBaseExp(String baseExp) {
-        BaseExp = baseExp;
+        mBaseExp = baseExp;
     }
 
     public String getmHp() {
@@ -109,12 +111,12 @@ public class Pokemon implements Serializable {
     }
 
     public boolean updated() {
-        return !(getmSpecAtk() == null ||
-                getmSpecDef() == null ||
-                getmHp() == null ||
-                getmDefence() == null ||
-                getmAttack() == null ||
-                getmSpeed() == null ||
-                getBaseExp() ==null);
+        return mHp != null &&
+                mAttack != null &&
+                mDefence != null &&
+                mSpecAtk != null &&
+                mSpecDef != null &&
+                mSpeed != null &&
+                mBaseExp !=null;
     }
 }

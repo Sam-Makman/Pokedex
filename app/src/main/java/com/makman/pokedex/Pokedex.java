@@ -749,6 +749,10 @@ public class Pokedex  {
 
         return mPokemons.subList(0, count);
     }
+
+    public void setPokemon(int pokemonId, Pokemon pokemon){
+        mPokemons.set(pokemonId - 1, pokemon);
+    }
         public ArrayList<Pokemon> getmPokemons() {
                 return mPokemons;
         }
